@@ -8,7 +8,7 @@ use Illuminate\Support\ServiceProvider;
 use Oxygencms\Blocks\Observers\BlockObserver;
 use Oxygencms\Blocks\Providers\RouteServiceProvider;
 
-class BlocksServiceProvider extends ServiceProvider
+class BlockServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap services.
@@ -32,6 +32,12 @@ class BlocksServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/Views' => resource_path('views/vendor/oxygencms'),
         ], 'views');
+
+        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+
+        $this->publishes([
+            __DIR__.'/../database/migrations/' => database_path('migrations')
+        ], 'migrations');
     }
 
     /**
