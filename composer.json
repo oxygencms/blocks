@@ -1,0 +1,25 @@
+{
+    "name": "oxygencms/blocks",
+    "description": "Oxy blocks",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pavel Pavlov",
+            "email": "pavlovp@icloud.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Oxygencms\\Blocks\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Oxygencms\\Blocks\\BlocksServiceProvider"
+            ]
+        }
+    }
+}
