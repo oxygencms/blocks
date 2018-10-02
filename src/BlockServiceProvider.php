@@ -42,6 +42,8 @@ class BlockServiceProvider extends ServiceProvider
 
     /**
      * Register services.
+     * +------------------
+     *
      *
      * @return void
      */
