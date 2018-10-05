@@ -62,7 +62,7 @@ class HtmlBlocks
             ];
 
             // set the block body to the html
-            foreach (array_keys(config('app.locales')) as $locale) {
+            foreach (array_keys(config('oxygen.locales')) as $locale) {
                 $block['body'][$locale] = $html;
             }
 

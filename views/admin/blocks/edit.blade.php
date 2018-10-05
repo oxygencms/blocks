@@ -19,6 +19,6 @@
         <button class="btn btn-primary" type="submit">Update</button>
     </form>
 
-    @include('admin.partials.dropzone-uploads', ['uploadable' => $block])
+    @include('oxygencms::admin.partials.dropzone-uploads', ['uploadable' => $block])
 
 @endsection

@@ -14,12 +14,12 @@
 </div>
 
 
-@foreach(config('app.locales') as $locale => $locale_name)
+@foreach(config('oxygen.locales') as $locale => $locale_name)
     <div class="row">
         <!-- body -->
         <div class="form-group col-12">
             <label for="{{ "body-$locale" }}">Body ({{ $locale }})</label>
-            <textarea class="form-control"
+            <textarea class="form-control tinymce"
                       id="{{ "body-$locale" }}"
                       name="{{ "body[$locale]" }}"
                       rows="11"
@@ -30,4 +30,4 @@
     </div>
 @endforeach
 
-@include('oxygencms::admin.partials.tinymce', ['selector' => '#body-en', 'model' => $block])
+@include('oxygencms::admin.partials.tinymce', ['selector' => '.tinymce', 'model' => $block])

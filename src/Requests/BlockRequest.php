@@ -4,7 +4,7 @@ namespace Oxygencms\Blocks\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class AdminBlockRequest extends FormRequest
+class BlockRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.

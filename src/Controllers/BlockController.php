@@ -4,10 +4,10 @@ namespace Oxygencms\Blocks\Controllers;
 
 use JavaScript;
 use Oxygencms\Blocks\Models\Block;
-use App\Http\Controllers\Controller;
-use Oxygencms\Blocks\Requests\AdminBlockRequest as BlockRequest;
+use Oxygencms\Core\Controllers\Controller;
+use Oxygencms\Blocks\Requests\BlockRequest;
 
-class AdminBlockController extends Controller
+class BlockController extends Controller
 {
     /**
      * Display a listing of the resource.

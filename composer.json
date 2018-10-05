@@ -1,11 +1,15 @@
 {
     "name": "oxygencms/blocks",
-    "description": "Oxy blocks",
+    "description": "Oxygen CMS blocks package.",
     "license": "MIT",
     "authors": [
         {
             "name": "Pavel Pavlov",
             "email": "pavlovp@icloud.com"
+        },
+        {
+            "name": "Martin Blagoev",
+            "email": "mb.reppair@gmail.com"
         }
     ],
     "minimum-stability": "dev",
