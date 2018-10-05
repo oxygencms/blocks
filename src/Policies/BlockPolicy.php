@@ -17,7 +17,7 @@ class BlockPolicy extends BasePolicy
      */
     public function index(User $user)
     {
-        if ($user->can('see_blocks') || $user->can('manage_blocks')) {
+        if ($user->can('view_blocks') || $user->can('manage_blocks')) {
             return true;
         }
 
