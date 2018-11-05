@@ -55,7 +55,7 @@ class BlockController extends Controller
 
         notification("$block->model_name successfully created.");
 
-        return redirect()->route('block.index');
+        return redirect()->route('admin.block.index');
     }
 
     /**

@@ -10,7 +10,7 @@
         </div>
     </div>
 
-    <form action="{{ route('block.store') }}" method="POST">
+    <form action="{{ route('admin.block.store') }}" method="POST">
         {!! csrf_field() !!}
 
         @include('oxygencms::admin.blocks._form-fields')
