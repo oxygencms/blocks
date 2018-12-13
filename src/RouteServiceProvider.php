@@ -31,7 +31,7 @@ class RouteServiceProvider extends ServiceProvider
             ->name('admin.')
             ->namespace('Oxygencms\Blocks\Controllers')
             ->group(function () {
-                Route::resource('block', 'BlockController', ['except' => 'show']);
+                Route::resource('block', 'BlockController', ['except' => ['show', 'create']]);
             });
     }
 }

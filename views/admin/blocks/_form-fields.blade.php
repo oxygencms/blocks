@@ -8,6 +8,7 @@
                name="name"
                placeholder="Enter bock name..."
                value="{{ old('name', optional($block)->name) }}"
+               disabled
         >
         {!! $errors->first('name', '<small class="form-text text-danger">:message</small>') !!}
     </div>

@@ -8,13 +8,13 @@
         <div class="col-12 d-flex align-items-center mb-3">
             <h1>Blocks</h1>
 
-            <div class="ml-auto d-flex justify-content-end">
-                <div>
-                    <a href="{{ route('admin.block.create') }}" class="btn">
-                        Create <i class="far fa-edit"></i>
-                    </a>
-                </div>
-            </div>
+            {{--<div class="ml-auto d-flex justify-content-end">--}}
+                {{--<div>--}}
+                    {{--<a href="{{ route('admin.block.create') }}" class="btn">--}}
+                        {{--Create <i class="far fa-edit"></i>--}}
+                    {{--</a>--}}
+                {{--</div>--}}
+            {{--</div>--}}
         </div>
     </div>
 
