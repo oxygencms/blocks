@@ -1,5 +1,6 @@
 <div class="row">
     <!-- name -->
+    <input type="hidden" name="name" value="{{ optional($block)->name }}">
     <div class="form-group col-6">
         <label for="name">Name <strong>*</strong></label>
         <input type="text"
