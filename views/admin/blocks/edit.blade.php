@@ -19,6 +19,10 @@
         <button class="btn btn-primary" type="submit">Update</button>
     </form>
 
-    @include('oxygencms::admin.partials.dropzone-uploads', ['uploadable' => $block])
+    <media-uploads mediable_type="{{ get_class($block) }}"
+                   mediable_id="{{ $block->id }}"
+                   :media="{{ $block->media }}"
+                   class="mt-3"
+    ></media-uploads>
 
 @endsection

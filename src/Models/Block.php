@@ -2,13 +2,12 @@
 
 namespace Oxygencms\Blocks\Models;
 
-use Oxygencms\Uploads\Traits\HasUploads;
-use Oxygencms\Core\Models\Model;
+use Oxygencms\Core\Models\MediaModel;
 use Spatie\Translatable\HasTranslations;
 
-class Block extends Model
+class Block extends MediaModel
 {
-    use HasUploads, HasTranslations;
+    use HasTranslations;
 
     /**
      * @var array $fillable

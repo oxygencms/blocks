@@ -70,6 +70,8 @@ class BlockController extends Controller
     {
         $this->authorize('update', Block::class);
 
+        $block->mapMediaUrls();
+
         return view('oxygencms::admin.blocks.edit', compact('block'));
     }
 
