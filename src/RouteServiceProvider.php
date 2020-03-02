@@ -2,8 +2,6 @@
 
 namespace Oxygencms\Blocks\Providers;
 
-use Validator;
-use Oxygencms\Core\Rules\ClassExists;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 

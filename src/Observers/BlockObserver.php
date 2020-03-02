@@ -28,7 +28,6 @@ class BlockObserver
      */
     public function updated(Block $block)
     {
-        info('observer updated');
         Cache::tags(HtmlBlocks::$tags)->forget("models.block.$block->name");
 
         Cache::tags(HtmlBlocks::$tags)->forever("models.block.$block->name", $block);

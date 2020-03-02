@@ -9,10 +9,12 @@ class AuthServiceProvider extends ServiceProvider
     /**
      * The policy mappings for the application.
      *
+     * todo: load policy and model from config
+     *
      * @var array
      */
     protected $policies = [
-        'Oxygencms\Blocks\Models\Block' => 'Oxygencms\Blocks\Policies\BlockPolicy'
+        \Oxygencms\Blocks\Models\Block::class => \Oxygencms\Blocks\Policies\BlockPolicy::class,
     ];
 
     /**
