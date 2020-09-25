@@ -6,7 +6,6 @@ use Oxygencms\Blocks\Models\Block;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 use Oxygencms\Blocks\Observers\BlockObserver;
-use Oxygencms\Blocks\Providers\RouteServiceProvider;
 
 class BlockServiceProvider extends ServiceProvider
 {

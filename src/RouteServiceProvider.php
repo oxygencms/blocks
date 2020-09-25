@@ -1,6 +1,6 @@
 <?php
 
-namespace Oxygencms\Blocks\Providers;
+namespace Oxygencms\Blocks;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
